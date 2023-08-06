@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="myDiv">My Picture</div><br>
+    <button onclick="changeElement()">Change</button>
+
+    <script>
+        function changeElement(){
+            let x = document.getElementById('myDiv');
+            x.innerHTML = '<img height=""140" width="140" src="https://media.licdn.com/dms/image/D4D03AQHrst9hQeRmzg/profile-displayphoto-shrink_800_800/0/1666446630139?e=2147483647&v=beta&t=FNg_Q-6hxZEtnN0qNNmW1EK-nm_MrS8ee407AfJpOdc" alt="New Image">'
+        }
+    </script>
+</body>
+</html>

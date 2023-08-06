@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+    <img id="myImg" src="https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2023/03/05/lxd18issstwqktqnnzrh6sv47tixcqtoprzmdwjw.jpg" height="140" width="140"><br><br>
+    <button onclick="changeToImage1()">Change to Image 1</button>
+    <button onclick="changeToImage2()">Change to Image 2</button>
+
+    <script>
+        function changeToImage1() {
+            let getMyImg = document.getElementById('myImg');
+            getMyImg.src = 'https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2023/03/05/lxd18issstwqktqnnzrh6sv47tixcqtoprzmdwjw.jpg';
+            getMyImg.height = '140';
+            getMyImg.width = '140';
+        }
+
+        function changeToImage2() {
+            let getMyImg = document.getElementById('myImg');
+            getMyImg.src = 'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQed8Qf-NkmItXXR2HKG7eL-RMCL2Ai0LdO8NGgUJhP5f7I2O_pMFupV55jh0dIsuP7c3q9Rm59xjRxoWs';
+            getMyImg.height = '140';
+            getMyImg.width = '140';
+        }
+    </script>
+</body>
+</html>
